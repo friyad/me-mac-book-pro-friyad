@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Main Section Strat Here ---------------------->
     <main>
         <section class="container mt-lg-5">
             <div class="row g-3">
@@ -24,29 +25,37 @@
                         16-core Neural 8GB unified memory 256GB SSD storage two thunderbolt / USB 4 ports Magic
                         Mouse Magic Keyboard US English.</p>
 
-
+                    <!-- Memory Options Here -->
                     <div class="mt-5">
                         <h5 class="fw-bold">Memory</h5>
-                        <button type="button" class="btn btn-outline-secondary">8GB unified memory</button>
-                        <button type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                        <button id="8gb-memory-btn" type="button" class="btn btn-outline-secondary">8GB unified
+                            memory</button>
+                        <button id="16gb-memory-btn" type="button" class="btn btn-outline-secondary">16GB unified
+                            memory</button>
                     </div>
 
+                    <!-- Storage options Here -->
                     <div class="mt-5">
                         <h5 class="fw-bold">Storage</h5>
-                        <button type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+                        <button id="256gb-storage-btn" type="button" class="btn btn-outline-secondary">256GB SSD
+                            storage</button>
+                        <button id="512gb-storage-btn" type="button" class="btn btn-outline-secondary">512GB SSD
+                            storage</button>
+                        <button id="1tb-storage-btn" type="button" class="btn btn-outline-secondary">1TB SSD
+                            storage</button>
                     </div>
 
+                    <!-- Choose your delivery options Here -->
                     <div class="mt-5">
                         <h5 class="fw-bold">Choose your delivery option</h5>
-                        <button type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime
-                            Delivery</button>
-                        <button type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delevery
+                        <button id="dly-25-btn" type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE
+                            Prime Delivery</button>
+                        <button id="dly-21-btn" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delevery
                             charge $20</button>
                     </div>
 
                     <div class="mt-5 row">
+                        <!-- All prices Start Here -->
                         <div class="col-lg-6">
                             <div class="row">
                                 <div class="col-lg-12 fw-bold">
@@ -58,54 +67,51 @@
 
                                     <div class="d-flex justify-content-between">
                                         <p class="m-0">Extra Memory Cost</p>
-                                        <p class="m-0">$0</p>
+                                        <p class="m-0">$<span id="ex-memory-cost">0</span> </p>
                                     </div>
                                     <hr class="my-2">
 
                                     <div class="d-flex justify-content-between">
                                         <p class="m-0">Extra Storage Cost</p>
-                                        <p class="m-0">$0</p>
+                                        <p class="m-0">$<span id="ex-storage-cost">0</span></p>
                                     </div>
                                     <hr class="my-2">
 
                                     <div class="d-flex justify-content-between">
                                         <p class="m-0">Delivery Charge</p>
-                                        <p class="m-0">$0</p>
+                                        <p class="m-0">$<span id="delivery-cost">0</span> </p>
                                     </div>
                                     <hr class="my-2 py-1">
 
                                     <div class="d-flex justify-content-between">
                                         <p class="m-0">Total Price</p>
-                                        <p class="m-0">$0</p>
+                                        <p class="m-0">$<span id="total-price">1299</span> </p>
                                     </div>
                                 </div>
 
-
+                                <!-- Promo Code Input and Button Here -->
                                 <div class="mt-3">
                                     <p class="m-0">Add Promo code</p>
                                     <div class="d-flex">
-                                        <input type="text" class="form-control me-2" placeholder=""
+                                        <input id="promo-code-input" type="text" class="form-control me-2"
+                                            placeholder="Type here your Promo Code"
                                             aria-label="Example text with button addon"
                                             aria-describedby="button-addon1">
-                                        <button type="button" class="btn btn-danger px-3">Apply</button>
+                                        <button id="apply-btn" type="button" class="btn btn-danger px-3">Apply</button>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
     </main>
 
-
+    <!-- Footer Start Here ------------------>
     <footer class="container mt-5">
         <hr>
-        <h1 class="text-center">Total: $1299</h1>
-
+        <h1 class="text-center">Total: $<span id="promo-total-price">1299</span> </h1>
     </footer>
 
 
